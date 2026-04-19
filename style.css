@@ -14,6 +14,7 @@
   --font-main: 'JetBrains Mono', monospace;
 }
 
+/*some global stuff*/
 *{
   margin:0;
   padding:0;
@@ -43,6 +44,46 @@ footer{
   font-size:12px;
 }
 
+h1{
+  font-size: 67px;
+  color: var(--neon-cyan);
+  text-shadow:
+    0 0 30px var(--neon-cyan);
+}
+
+/*animation setup*/ 
+@keyframes appear_head{
+  from{
+    opacity:0;
+    transform: translateY(30px);
+  }
+  to{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes appear_component{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+h1, h2, h3, h4, h5{
+  opacity:0;
+  animation: appear_head 1s ease-out forwards;
+}
+
+.button, p{
+  opacity:0;
+  animation: appear_component 1s ease-out forwards;
+}
+
+p{animation-delay:0.2s;}
+.button{animation-delay:0.4s;}
 
 .common_container{
   display:grid;
@@ -60,7 +101,9 @@ footer{
 
 .box_button:hover{
   border: 1px solid var(--neon-cyan);
-  box-shadow: 0 0 2px var(--neon-cyan);
+  background-color: var(--lighter-black);
+  box-shadow: 0 0 10px var(--neon-cyan);
+
 }
 
 .box_button:hover h4{
@@ -74,6 +117,13 @@ footer{
   text-stroke: 1.5px var(--neon-cyan);
 -webkit-text-stroke: 1.5px var(--neon-cyan);
   filter: drop-shadow(0 0 7px var(--neon-cyan));
+
+  transition: transform 0.3s ease, filter 0.3 ease;
+  display:inline-block;
+}
+
+.box_button:hover .icon{
+  transform: scale(1.15);
 }
 
 .box_para{
@@ -85,6 +135,7 @@ h4{
   font-weight: 600;
   color:var(--neon-cyan);
 }
+
 
 .button{
   padding: 8px 17px;
@@ -142,6 +193,16 @@ nav{
   border-bottom:2px solid var(--neon-cyan); 
 }
 
+#login_btn{
+  padding: 8px 17px;
+  margin: 20px;
+  color: var(--neon-cyan);
+  border: 1px solid var(--neon-cyan);
+  box-shadow: 0 0 5px var(--neon-cyan); 
+
+}
+
+
 /*for homepage*/
 .title{
   color:var(--neon-cyan);
@@ -189,3 +250,4 @@ nav{
   color:var(--neon-cyan);
 }
 
+/*About page*/
