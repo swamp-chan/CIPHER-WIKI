@@ -45,12 +45,35 @@ footer{
 }
 
 h1{
-  font-size: 67px;
+  font-size: 74px;
   color: var(--neon-cyan);
   text-shadow:
     0 0 30px var(--neon-cyan);
 }
 
+h5{
+ font-size:24px;
+ color: var(--neon-cyan);
+}
+
+.main_page{
+  display:flex;
+  flex-direction:column;
+  margin-top:2%;
+  padding:5%;
+}
+
+.page_para{
+  text-align:justify;
+}
+
+hr{
+  border:none;
+  height:1px;
+  width: 25%;
+  background-color:var(--dimmer-cyan);
+  margin-top: 20px;
+}
 /*animation setup*/ 
 @keyframes appear_head{
   from{
@@ -72,7 +95,7 @@ h1{
   }
 }
 
-h1, h2, h3, h4, h5{
+h1, h2, h3, h4, h5, .box_button{
   opacity:0;
   animation: appear_head 1s ease-out forwards;
 }
@@ -251,3 +274,6 @@ nav{
 }
 
 /*About page*/
+#second_about{
+  margin-top:50px;
+}
