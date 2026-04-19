@@ -25,5 +25,37 @@
         </div> 
       </div>
     </nav>
+    <main class="main_page">
+      <a href="tools.html">
+        <p id="back_to_tools_"><i class="bi bi-arrow-90deg-left"></i>BACK TO TOOLS</p>
+      </a>
+
+      <h1>
+        TEXT ENCRYPTER
+        <hr style="margin-bottom:60px;background-color:cyan">
+      </h1>
+      <div id="en_container">
+        <div class="cols">
+          <label>PLAIN TEXT</label>
+          <textarea id="plain_text" placeholder="Type here..."></textarea>
+        </div>
+        <div id="en_controls">
+          <button id="encryt">ENCRYPT</button>
+          <button id="decrypt">DECRYPT</button>
+          <hr style="width:100%;">
+          <select id="cipher_type">
+            <option value="caesar">Caesar Cipher</option>
+            <option value="vigenere">Vigenere Cipher</option>
+            <option value="base64">Base64</option>
+          </select>
+          <input type="number" id="keys" value="3">
+          <button id="exec">EXECUTE</button>
+        </div>
+        <div class="column">
+          <label>OUTPUT TEXT</label>
+          <div id="cipher_text"></div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

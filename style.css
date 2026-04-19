@@ -388,20 +388,95 @@ nav{
   align-items: center;
   margin:5%;
 }
+
 #back_to_tools{
   text-align:center;
   color:var(--neon-cyan);
 }
+
 #back_to_tools:hover{
   color:white;
 }
+
 #wip_icon{
   align:center;
   font-size:100px;
   margin-top:40px;
 }
+
 #wip_hr{
   border: 2px solid var(--neon-cyan);
   margin: 30px auto;
 }
+
+/*text encryter*/ 
+#en_container{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items:flex-start;
+  gap:30px;
+  width:100%;
+}
+
+.cols{
+  display:flex;
+  flex-direction:column;
+  max-width:400px; 
+}
+
+#en_controls{
+ display:flex;
+ flex-direction:column;
+ gap:15px;
+ width:200px;
+ text-align:center;
+ margin-top:32px;
+}
+
+textarea, #cipher_text{
+  min-height:300px;
+  width:400px;
+  background-color:var(--lighter-black);
+  border: 2px solid var(--dimmer-cyan);
+  color: white;
+}
+
+textarea:focus{
+  outline:none;
+}
+
+button{
+  height:40px;
+  color:var(--neon-cyan);
+  background-color:var(--lighter-black);
+  outline:none;
+  border: 2px solid var(--neon-cyan);
+}
+
+button:hover{
+  background-color:var(--neon-cyan);
+  color:black;
+  outline:none;
+}
+
+#back_to_tools_{
+  align:left;
+  color:var(--neon-cyan);
+}
+
+#exec{
+  background-color:var(--neon-cyan);
+  color:black;
+}
+
+#exec:hover{
+  background-color:white;
+  border:none;
+}
+
+#back_to_tools_:hover{
+  color:white;
+}
+
 
