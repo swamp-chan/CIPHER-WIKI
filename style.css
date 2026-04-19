@@ -350,3 +350,23 @@ nav{
   justify-content:center;
   font-color:white;
 }
+
+/*reference page*/
+.refer_box_button{
+  display:inline-block;
+  color:var(--neon-cyan);
+  border:1px dotted var(--neon-cyan);
+  margin: 5px;
+  padding: 5px;
+  background-color: var(--dimmer-cyan);
+}
+
+.icon_refer{
+  font-size:42px;
+  color:var(--neon-cyan);
+  font-weight:1400;
+  text-stroke: 1.5px var(--neon-cyan);
+  filter: drop-shadow(0 0 10px var(--neon-cyan));
+
+ 
+}
