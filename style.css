@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 :root{
   --bg-black: black;
   --card-bg: black;
   --neon-cyan: #00ffff;
   --dimmer-cyan:#1c3d3d;
   --text-gray: #aaaaaa;
+  --lighter-black: #0a0a0a;
 
   --glow: 0 0 10px var(--neon-cyan);
   --border-glow: 0 0 5px var(--neon-cyan), inset 0 0 5px var(--neon-cyan);
@@ -41,6 +43,7 @@ footer{
   font-size:12px;
 }
 
+
 .common_container{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
@@ -49,10 +52,38 @@ footer{
 }
 
 .box_button{
-  padding: 10%;
+  padding: 5% 5% 10%;
   margin: 10px;
   border:1px solid var(--dimmer-cyan);
-  
+  background-color: var(--lighter-black);
+}
+
+.box_button:hover{
+  border: 1px solid var(--neon-cyan);
+  box-shadow: 0 0 2px var(--neon-cyan);
+}
+
+.box_button:hover h4{
+  color:white;
+}
+
+.icon{
+  font-size:42px;
+  color:var(--neon-cyan);
+  font-weight:1400;
+  text-stroke: 1.5px var(--neon-cyan);
+-webkit-text-stroke: 1.5px var(--neon-cyan);
+  filter: drop-shadow(0 0 7px var(--neon-cyan));
+}
+
+.box_para{
+  font-size:16px;
+}
+
+h4{
+  font-size:24px;
+  font-weight: 600;
+  color:var(--neon-cyan);
 }
 
 .button{
@@ -84,10 +115,12 @@ nav{
   position: sticky; top: 0;
   background-color: var(--bg-black);
   opacity:0.9;
+  z-index:9999;
 }
 
 #icon_btn{
   font-size:24px;
+  
 }
 
 #nav_subgroup{
@@ -122,7 +155,7 @@ nav{
   justify-content:flex-start;
   align-items: center;
   text-align: center;
-  padding: 5%;
+  padding: 10%;
   background-image: 
       linear-gradient(var(--dimmer-cyan) 1px, transparent 1px),
       linear-gradient(90deg, var(--dimmer-cyan) 1px, transparent 1px);
@@ -133,7 +166,8 @@ nav{
 #main_home_title{
   display:flex;
   padding: 2%;
-  font-size:40px;
+  font-size:74px;
+  font-weight:900;
 
 }
 
@@ -154,3 +188,4 @@ nav{
   padding: 10px 0;
   color:var(--neon-cyan);
 }
+
