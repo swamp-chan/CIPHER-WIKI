@@ -8,9 +8,6 @@
   --text-gray: #aaaaaa;
   --lighter-black: #0a0a0a;
 
-  --glow: 0 0 10px var(--neon-cyan);
-  --border-glow: 0 0 5px var(--neon-cyan), inset 0 0 5px var(--neon-cyan);
-
   --font-main: 'JetBrains Mono', monospace;
 }
 
@@ -21,6 +18,10 @@
   box-sizing: border-box;
   font-family: var(--font-main);
   
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body{
@@ -49,6 +50,11 @@ h1{
   color: var(--neon-cyan);
   text-shadow:
     0 0 30px var(--neon-cyan);
+}
+
+h3{
+  color:var(--neon-cyan);
+  font-size: 32px;
 }
 
 h5{
@@ -222,6 +228,14 @@ nav{
   color: var(--neon-cyan);
   border: 1px solid var(--neon-cyan);
   box-shadow: 0 0 5px var(--neon-cyan); 
+}
+#login_btn:hover{
+  padding: 8px 17px;
+  margin: 20px;
+  color: black;
+  background-color: var(--neon-cyan);
+  border: 1px solid var(--neon-cyan);
+  box-shadow: 0 0 10px var(--neon-cyan); 
 
 }
 
@@ -276,4 +290,63 @@ nav{
 /*About page*/
 #second_about{
   margin-top:50px;
+}
+
+/*Introduction page*/ 
+#intro_page{
+  display:grid;
+  grid-template-columns: 300px 1fr;
+  column-gap:40px;
+}
+
+.sidebar{
+  position:sticky;
+  top:60px;
+  margin:0 auto;
+  height:fit-content;
+  border:1px solid var(--dimmer-cyan);
+  padding:30px
+
+}
+
+.sidebar_content_ls{
+  list-style-type:none;
+  margin-top:20px;
+}
+.sidebar_content_ls ul{
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+
+.sidebar_content_ls ul li{
+  padding-left:15px;
+}
+
+#intro_content{
+  display:flex;
+  flex-direction:column;
+  row-gap:50px;
+}
+
+.sidebar_heading{
+  font-weight:bold;
+  font-size:24px;
+  color:var(--neon-cyan);
+}
+
+.intro_page_fundamental{
+  display:flex;
+  flex-direction:column;
+  row-gap:25px;
+}
+
+#cryptology,#cryptography,#cryptography_history,#core_principle{
+  scroll-margin-top: 100px;
+}
+
+#info_wip{
+  display:flex;
+  justify-content:center;
+  font-color:white;
 }
